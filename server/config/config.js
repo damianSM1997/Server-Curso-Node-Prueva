@@ -1,7 +1,7 @@
 // ============================
 //  Puerto
 // ============================
-process.env.PORT = process.env.PORT || 8000;
+process.env.PORT = process.env.PORT || 3000;
 
 
 // ============================
@@ -30,9 +30,9 @@ process.env.SEED = process.env.SEED || 'este-es-el-seed-desarrollo';
 // ============================
 let urlDB;
 
-//if (process.env.NODE_ENV === 'dev') {
-//    urlDB = 'mongodb://localhost:27017/cafe';
-//} else {
-urlDB = process.env.MONGO_URI;
-//}
+if (process.env.NODE_ENV === 'dev') {
+    urlDB = 'mongodb://localhost:27017/cafe';
+} else {
+    urlDB = 'mongodb+srv://damian:MI0E1zcZXQP20IwK@cluster0-naamb.mongodb.net/cafe';
+}
 process.env.URLDB = urlDB;
