@@ -16,6 +16,7 @@ app.use(bodyParser.json())
 
 
 // Configuración global de rutas
+//cambios xd ignorar
 app.use(require('./routes/index'));
 
 
