@@ -47,7 +47,7 @@ app.get('/usuario', verificaToken, (req, res) => {
 });
 
 app.post('/usuario', [verificaToken, verificaAdmin_Role], function(req, res) {
-
+    //apartir del boti se optine todo lo que se requiera psotear
     let body = req.body;
 
     let usuario = new Usuario({
