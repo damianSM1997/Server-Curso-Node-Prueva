@@ -18,7 +18,7 @@
     "mongoose": "^5.9.16",
     "mongoose-unique-validator": "^2.0.3",
     "undercore": "^1.0.0",
-    "underscore": "^1.10.2"
+    "underscore": "^1.12.1"
   },
   "devDependencies": {},
   "description": ""
